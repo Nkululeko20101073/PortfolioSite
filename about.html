@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Me - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #00FFFF;
+            display: flex;
+            justify-content: space-between; /* Ensure the footer stays at the bottom */
+            align-items: center; /* Center content vertically */
+            min-height: 100vh;
+            text-align: center;
+            flex-direction: column; /* Stack content vertically */
+        }
+
+        .main {
+            width: 100%;
+            text-align: center;
+            padding: 50px 20px;
+            flex: 1; /* Allow content to grow and push the footer down */
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            justify-content: center; /* Center navbar items */
+        }
+
+        ul li {
+            padding: 10px 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #00FFFF;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        ul li a:hover {
+            color: #fff;
+        }
+
+        .info {
+            background: rgba(0, 0, 0, 0.7);
+            display: inline-block;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px #00FFFF;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .info h1 {
+            font-size: 50px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .info h1 span {
+            color: #fff;
+        }
+
+        .info h3 {
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('cybersecurity.jpg') no-repeat center center fixed;
+            background-size: cover;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .info h1 {
+                font-size: 36px;
+            }
+
+            .info h3 {
+                font-size: 16px;
+            }
+
+            ul li a {
+                font-size: 14px;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            color: #00FFFF;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <img src="logo.png" class="logo" alt="Logo">
+
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="Skills.html">SKILLS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h1><span>A</span>BOUT <span>M</span>E</h1>
+            <h3>
+                Born and raised in Estcourt, South Africa, I am an aspiring Cybersecurity Analyst with a diploma in
+                Software Development from Rosebank College. While my professional experience includes sales and graphic
+                design, my true passion lies in the world of cybersecurity. Currently, I am advancing my skills and
+                knowledge through an intensive program at CapaCiTi, where I am working diligently to build a successful
+                career in this dynamic and ever-evolving field. The journey to discovering my passion has been both
+                enriching and transformative, filled with valuable experiences that have shaped the person I am today.
+                <br><br>
+
+                It all began during my high school years, where I developed an interest in technology and
+                problem-solving. After completing matric, I took on a role as a general worker at Gambushe Property,
+                which instilled in me a strong work ethic and adaptability. Driven to pursue my interest in technology,
+                I enrolled at Rosebank College to study Software Development. This was a pivotal moment in my life, as
+                it allowed me to gain technical knowledge while also balancing part-time work as a graphic designer for
+                Logoman Design. These experiences not only honed my creative skills but also taught me the importance of
+                discipline and time management.
+                <br><br>
+
+                After graduating, I moved to Johannesburg in search of better opportunities in my field of study. It was
+                here that I began my professional career as a sales consultant at African Bank. Though sales was not
+                directly aligned with my aspirations, it was a valuable experience that strengthened my communication,
+                customer service, and interpersonal skills. This role also taught me the importance of building
+                relationships, an essential quality in any profession. However, my desire to work in the tech industry
+                remained unwavering, motivating me to seek opportunities that aligned more closely with my interests.
+                <br><br>
+
+                My breakthrough came when I joined CapaCiTi, a program designed to equip individuals with advanced
+                technical skills. Through this training, I was introduced to the fascinating world of cybersecurity, and
+                I quickly realized this was the path I was meant to follow. The program not only deepened my
+                understanding of cybersecurity principles but also allowed me to develop practical skills in areas such
+                as threat detection, risk management, and ethical hacking. It was during this time that I truly fell in
+                love with cybersecurity, captivated by its complexity and the opportunity to make a meaningful impact in
+                protecting digital systems.
+                <br><br>
+
+                Looking back, my journey has been one of growth and self-discovery. Each step, from my early days as a
+                general worker to my current training in cybersecurity, has played a crucial role in shaping my career
+                path. The diverse experiences I have gained along the way have given me a unique perspective and a
+                versatile skill set. Today, I am more determined than ever to excel in the cybersecurity field, driven
+                by a passion for technology and a commitment to safeguarding the digital world. My story is a testament
+                to the power of perseverance, adaptability, and following one's true calling.
+                <br><br>
+            </h3>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Nkululeko Lwandile Conco</p>
+    </footer>
+
+</body>
+
+</html>

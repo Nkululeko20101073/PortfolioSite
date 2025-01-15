@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+/* Skills and Tools Section */
+.skills-tools-container {
+    display: flex;
+    justify-content: space-between; /* Ensure space between the sections */
+    gap: 30px; /* Adds space between the two sections */
+    padding-right: 80px;
+}
+
+/* Info and Tools Section - Apply same styles to both */
+.info, .tools {
+    flex: 1; /* Ensures both sections take up equal space */
+    min-width: 300px; /* Prevent sections from shrinking too much on smaller screens */
+    background-color: #1a1a1a; /* Same background color for both sections */
+    border-radius: 8px; /* Rounded corners for both sections */
+    padding: 20px; /* Padding inside sections */
+    box-sizing: border-box; /* Ensure padding does not affect the width */
+}
+
+/* Heading and Lists - Same styles for both sections */
+.info h3, .tools h3, .info h1, .tools h1, .info ol, .tools ol {
+    text-align: left; /* Align all text to the left */
+    margin-left: 20px; /* Add padding for visual spacing */
+    color: #fff; /* Text color for both sections */
+}
+
+.info h1, .tools h1 {
+    color: #00b8b8; /* Header color */
+}
+
+.info ol li, .tools ol li {
+    margin-bottom: 5px;
+    line-height: 1.5; /* Adjust line spacing for better readability */
+}
+
+/* Ensure both Info and Tools sections have the same visual style */
+.info h3, .tools h3 {
+    margin-top: 0; /* Remove extra space above headings */
+}
+
+
+
+        /* Gallery Section */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            width: 30%;
+            margin: 10px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: opacity 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .gallery-item img.secondary {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover img.primary {
+            opacity: 0;
+        }
+
+        .gallery-item:hover img.secondary {
+            opacity: 1;
+        }
+
+        .gallery-item p {
+            margin-top: 10px;
+            color: #00b8b8;
+        }
+        .project-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #00b8b8;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #fff;
+}
+
+
+/* Social Media Icons Section */
+.ICONS {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    gap: 20px; /* Add spacing between the icons */
+    margin-top: 20px;
+}
+
+.ICONS a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* Circular container */
+    height: 60px;
+    border-radius: 50%; /* Make the background circular */
+    background-color: #1a1a1a; /* Icon background color */
+    color: #00b8b8; /* Icon color */
+    font-size: 2rem; /* Icon size */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.ICONS a:hover {
+    background-color: #00b8b8; /* Change background color on hover */
+    color: #fff; /* Change icon color on hover */
+    transform: scale(1.2); /* Slight zoom effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <img src="logo.png" class="logo" alt="Logo">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="skills.html">SKILLS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="gallery-item">
+            <img class="primary" src="Antivirus.PNG" alt="Image 1">
+            <img class="secondary" src="Antivirus Results.PNG" alt="Image 1 Hover">
+            <h2>Antivirus</h2><br>
+            <a href="https://github.com/Nkululeko20101073/Antivirus" class="project-link">View Project</a> 
+        </div>
+        <div class="gallery-item">
+            <img class="primary" src="Nmap.PNG" alt="Image 2">
+            <img class="secondary" src="Nmap Results.PNG" alt="Image 2 Hover">
+            <h2>Port Scanner</h2><br>
+            <a href="https://github.com/Nkululeko20101073/Port-Scanners" class="project-link">View Project</a> 
+        </div>
+        <div class="gallery-item">
+            <img class="primary" src="Password manager.PNG" alt="Image 3">
+            <img class="secondary" src="Password result 3.PNG" alt="Image 3 Hover">
+            <h2>Password Manager</h2><br>
+            <a href="https://github.com/Nkululeko20101073/Password-Manager" class="project-link">View Project</a> 
+        </div>
+    </section>
+
+   <!-- Skills and Tools Section -->
+<section class="skills-tools-container">
+    <!-- Skills Section -->
+    <section class="info">
+        <h3>These are my <span>SKILLS</span>.</h3><br>
+        <h1><span>T</span>echnical<span>S</span>kills</h1>
+        <ol>
+            <li>Cybersecurity</li>
+            <li>Software Development</li>
+            <li>Graphic Design</li>
+            <li>Sales Consultation</li>
+            <li>Conflict Management</li>
+            <li>Team Leadership</li>
+            <li>Communication & Collaboration</li>
+            <li>Adaptability</li>
+        </ol>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="info">
+        <h3>These are the <span>TOOLS</span> I have used.</h3><br>
+        <h1><span>T</span>ools</h1>
+        <ol>
+            <li>Kali Linux</li>
+            <li>Metasploit</li>
+            <li>Nessus Essentials</li>
+            <li>Nmap</li>
+            <li>OpenVAS</li>
+            <li>Socket</li>
+            <li>Nikto</li>
+            <li>Cisco Packet Tracer</li>
+        </ol>
+    </section>
+</section>
+
+
+    
+    <!-- Social Media Icons Section -->
+    <div class="ICONS">
+        <a href="https://www.java.com/en/download/help/whatis_java.html"><i class="fab fa-java"></i></a>
+        <a href="https://www.python.org/"><i class="fa-brands fa-python"></i></a>
+        <a href="https://www.oracle.com/za/mysql/what-is-mysql/"><i class="fas fa-database"></i></a>
+        <a href="https://www.w3schools.com/Html/"><i class="fa-brands fa-html5"></i></a>
+        
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Nkululeko Lwandile Conco</p>
+    </footer>
+
+</body>
+</html>

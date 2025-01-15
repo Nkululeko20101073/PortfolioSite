@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Ensure consistent box sizing */
+}
+
+body {
+    background: black; /* Black background */
+    color: white; /* White text for readability */
+}
+
+.main {
+    width: 100%;
+    background: black; /* Black background */
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.navbar {
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+ul {
+    margin-top: -4%;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: turquoise; /* Turquoise text */
+    transition: .4s ease;
+}
+
+ul li a:hover {
+    color: white; /* White text on hover */
+}
+
+.info {
+    margin-left: 7%;
+    margin-top: 6%;
+}
+
+.info h1 {
+    font-size: 65px;
+    color: turquoise; /* Turquoise headers */
+}
+
+.info h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.info span {
+    color: turquoise; /* Turquoise emphasis */
+}
+
+.info a {
+    text-decoration: none;
+    color: black;
+    background: turquoise; /* Turquoise button background */
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.info a:hover {
+    background: white; /* White background on hover */
+    color: black; /* Black text on hover */
+}
+
+.info h2 {
+    padding-right: 10%;
+    text-align: center;
+    margin-top: -150px;
+}
+
+.image {
+    width: 20%; /* Set width */
+    position: absolute; /* Absolute positioning */
+    right: 100px; /* Position from right */
+    bottom: 20%; /* Position from bottom */
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3); /* Turquoise shadow */
+    transition: transform 0.3s ease;
+}
+
+.image:hover img {
+    transform: translateY(-10px);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.icons a {
+    text-decoration: none;
+    color: turquoise; /* Turquoise icons */
+    font-size: 60px;
+    transition: color 0.3s;
+}
+
+.icons ion-icon:hover {
+    color: white; /* White color on hover */
+}
+
+/* Skills Icons */
+.ICONS {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 20px 0;
+}
+
+.ICONS a {
+    font-size: 80px;
+    transition: color 0.3s;
+    color: turquoise; /* Turquoise skills icons */
+}
+
+.ICONS a:hover {
+    color: white; /* White color on hover */
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: black; /* Black background */
+    border: 2px solid turquoise; /* Turquoise border */
+}
+
+.project image {
+    position: absolute;
+    height: 140%;
+    left: 40%;
+    transform: translate(-55%);
+    bottom: 0;
+    transition: left 2s ease;
+    border-radius: 50%;
+}
+
+.project:hover .image {
+    left: 55%;
+}
+
+/* Contact Form Style */
+.contact {
+    width: 40%;
+    margin: 5% auto;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2); /* Turquoise shadow */
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    color: turquoise; /* Turquoise headers */
+    text-align: center;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: turquoise; /* Turquoise labels */
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid turquoise; /* Turquoise border */
+    border-radius: 4px;
+    background: black; /* Black background */
+    color: white; /* White text */
+}
+
+.contact button {
+    background: turquoise; /* Turquoise button */
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.contact button:hover {
+    background: white; /* White background on hover */
+    color: black; /* Black text on hover */
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    margin: -50px 0;
+    gap: 50px;
+}
+
+.cont a {
+    text-decoration: none;
+    color: turquoise; /* Turquoise icons */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #00FFFF;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Chatbot Style */
+.chatbot {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    width: 300px;
+    background: black; /* Black background */
+    border: 2px solid turquoise; /* Turquoise border */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3); /* Turquoise shadow */
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot-header {
+    background: turquoise; /* Turquoise header */
+    color: black;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.chatbot-body {
+    display: none;
+    padding: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .image {
+        display: none;
+    }
+}
+
+
+
+/* General Styles */
+body {
+   
+    text-align: center;
+}
+
+
+/* Info Section */
+.info {
+    margin-top: 50px;
+}
+
+.info h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.info h3 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.info .button {
+    display: inline-block;
+    background: #fc466b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.info .button:hover {
+    background: #3f5efb;
+    transform: scale(1.1);
+}
+
+/* Chatbot */
+/* .chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    border: 2px solid #3f5efb;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-header {
+    background: #3f5efb;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+.chatbot-body {
+    padding: 10px;
+}
+
+.chatbot-body input {
+    width: 80%;
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #3f5efb;
+    border-radius: 5px;
+}
+
+.chatbot-body button {
+    padding: 8px 15px;
+    background: #3f5efb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+/* Chatbot */
+.chatbot {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    width: 300px;
+    background: black; /* Black background */
+    border: 2px solid turquoise; /* Turquoise border */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3); /* Turquoise shadow */
+    display: flex;
+    flex-direction: column;
+    color: white; /* White text for consistency */
+}
+
+.chatbot-header {
+    background: turquoise; /* Turquoise header */
+    color: black; /* Black text for contrast */
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+}
+
+.chatbot-body {
+    display: none;
+    /* Initially hidden */
+    padding: 10px;
+}
+
+.messages {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+/* Message Styles */
+.message-user {
+    background-color: rgba(0, 255, 255, 0.6); /* Lighter turquoise for user messages */
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 10px 0;
+    align-self: flex-end;
+    max-width: 80%;
+    word-wrap: break-word;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3); /* Soft shadow */
+}
+
+.message-chatbot {
+    background-color: turquoise; /* Turquoise for chatbot messages */
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 10px 0;
+    align-self: flex-start;
+    max-width: 80%;
+    word-wrap: break-word;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3); /* Soft shadow */
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid turquoise; /* Turquoise border */
+    border-radius: 4px;
+    background: black; /* Black input background */
+    color: white; /* White input text */
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    background: turquoise; /* Turquoise button */
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: rgba(0, 255, 255, 0.6); /* Lighter turquoise on hover */
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-out;
+}
+
+.slide-in {
+    animation: slideIn 1s ease-out;
+}
+
+.bounce-in {
+    animation: bounceIn 1.2s ease-out;
+}

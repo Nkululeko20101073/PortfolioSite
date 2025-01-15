@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="Skills.html">SKILLS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        
+
+
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="19d002f2-ba7f-4d32-a2be-a8e569c992d1">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="cont">
+            <a href="https://www.facebook.com/nkululeko.conco.9"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/nkululeko-conco-nlc"><ion-icon name="logo-LinkedIn"></ion-icon></a>
+            <a href="https://github.com/Nkululeko20101073"><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <footer>
+        <p>© 2024 Nkululeko Lwandile Conco</p>
+    </footer>
+</body>
+
+</html>

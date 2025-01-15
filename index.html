@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Lock animation styles */
+        .lock-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000;
+        }
+
+        .lock {
+            position: relative;
+            width: 50px;
+            height: 70px;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            animation: unlock 3s ease-in-out forwards;
+        }
+
+        .lock::before {
+            content: "";
+            position: absolute;
+            top: -45px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            border: 5px solid #333;
+            border-radius: 50%;
+            background-color: #f3f3f3;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 3s ease-in-out;
+        }
+
+        .lock::after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 10px;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .shackle {
+            position: absolute;
+            top: -45px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 50px;
+            border: 5px solid #333;
+            border-bottom: none;
+            border-radius: 20px 20px 0 0;
+            background-color: transparent;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+            transform-origin: bottom center;
+            animation: shackle-move 3s ease-in-out forwards;
+        }
+
+        @keyframes unlock {
+            0% {
+                background-color: #333;
+            }
+            100% {
+                background-color: #40e0d0; /* Turquoise color */
+            }
+        }
+
+        @keyframes shackle-move {
+            0% {
+                transform: translateX(-50%) rotate(0deg);
+            }
+            50% {
+                transform: translateX(-50%) rotate(-30deg);
+            }
+            100% {
+                transform: translateX(-50%) rotate(0deg);
+            }
+        }
+
+        .fade-out {
+            opacity: 0;
+            transition: opacity 0.5s ease-out;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="loading-screen" class="lock-container">
+        <div class="lock">
+            <div class="shackle"></div>
+        </div>
+    </div>
+
+    <div class="main" style="display: none;">
+        <div class="navbar">
+            <img src="logo.png" class="logo" alt="Logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h3 class="fade-in">Hi, I'm <span>Nkululeko Lwandile Conco</span> and I am in</h3>
+            <h1 class="slide-in"><span>Cyber</span> Security</h1>
+            <h3 class="fade-in">Born and raised in Estcourt, South Africa.<br>
+                I am an aspiring Cyber Security Analyst, with a qualification in Software Development<br>
+                from Rosebank College. Although I have experience in sales and graphic design, my true passion lies in Cybersecurity.<br>
+                I am currently advancing my skills and knowledge through my studies at CapaCiti, working toward building a<br>
+                successful career in this dynamic field.
+            </h3>
+            <a href="Certificate.pdf" class="button bounce-in" target="_blank">View my Certificate</a>
+            <a href="NKULULEKO CV.pdf" class="button bounce-in" target="_blank">View my CV</a>
+        </div>
+   
+        <div class="chatbot">
+            <div class="chatbot-header" onclick="toggleChat()">
+                Chat with Me
+            </div>
+            <div class="chatbot-body" id="chatbot-body" style="display:none;">
+                <div class="messages" id="messages"></div>
+                <input type="text" id="user-input" placeholder="Type a message..." />
+                <button type="button" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    
+    </div>
+    <footer>
+        <p>© 2024 Nkululeko Lwandile Conco</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // Simulate page loading process
+        window.addEventListener("load", () => {
+            const loadingScreen = document.getElementById("loading-screen");
+            const mainContent = document.querySelector(".main");
+
+            // Wait for lock animation to finish
+            setTimeout(() => {
+                loadingScreen.classList.add("fade-out");
+                setTimeout(() => {
+                    loadingScreen.style.display = "none";
+                    mainContent.style.display = "block";
+                }, 500); // Match the transition duration
+            }, 3000); // Match the animation duration
+        });
+    </script>
+</body>
+
+</html>
