@@ -1,4 +1,4 @@
-Lawrence Sibisi's Portfolio
+Nkululeko Portfolio
 
 Welcome to my portfolio! This website showcases my journey as a Junior DevOps Engineer and aspiring software developer. It contains information about my skills, projects, and how to contact me.
 
@@ -26,7 +26,7 @@ Features
 - Contact Form: Allows users to send messages directly to me.
 
 how to access my website:
-https://lawsibisi.github.io/Lawrence-s_website.github.io/
+https://nkululeko20101073.github.io/nkululeko2010.github.io/index.html
 
 Setup
 
@@ -34,7 +34,7 @@ To view the portfolio locally, follow these steps:
 
 Clone the repository:
    ```bash
-   git clone https://github.com/LawSibisi/portfolio.git
+   git clone https://nkululeko20101073.github.io/nkululeko2010.github.io/index.html
 
 Navigate to the project directory:
 cd portfolio
